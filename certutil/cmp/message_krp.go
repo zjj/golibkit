@@ -4,7 +4,8 @@ import (
 	"encoding/asn1"
 	"errors"
 	"fmt"
-	"ra/libs/certutil"
+
+	"github.com/zjj/golibkit/certutil"
 )
 
 // KeyRecRepContent shall come from keyRecRepContent lower, raw

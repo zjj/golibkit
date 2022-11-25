@@ -12,8 +12,9 @@ import (
 	"io/ioutil"
 	"log"
 	"math/big"
-	"ra/libs/certutil"
 	"testing"
+
+	"github.com/zjj/golibkit/certutil"
 
 	"github.com/tjfoc/gmsm/sm2"
 	"github.com/tjfoc/gmsm/x509"

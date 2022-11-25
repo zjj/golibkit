@@ -10,11 +10,11 @@ import (
 	"errors"
 	"fmt"
 	"math/big"
-	"ra/libs/certutil"
-	"ra/libs/utils"
 	"time"
 
 	"github.com/tjfoc/gmsm/x509"
+	"github.com/zjj/golibkit/certutil"
+	"github.com/zjj/golibkit/rand"
 )
 
 /*
@@ -110,7 +110,7 @@ func NewPKIHeader() *PKIHeader {
 	rec, _ := newRecpDirectoryName()
 	h.Recipient = *rec
 
-	uuid, _ := utils.NewUUID()
+	uuid, _ := rand.NewUUID()
 	h.TransactionID = []byte(uuid)
 	h.MessageTime = time.Now().UTC()
 	return h
